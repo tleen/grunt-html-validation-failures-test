@@ -1,4 +1,4 @@
 grunt-html-validation-failures-test
 ===================================
 
-Testing the causes for failure in grunt tasks following the html validation task. First discovered while developing a [Grunt talk](https://github.com/tleen/somewww-talk-grunt).
+Testing the causes for failure in grunt tasks following the html validation task. First discovered while developing a [Grunt talk](https://github.com/tleen/somewww-talk-grunt), see Issue #[1](https://github.com/tleen/somewww-talk-grunt/issues/1).
