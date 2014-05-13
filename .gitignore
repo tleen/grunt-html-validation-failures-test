@@ -1,3 +1,4 @@
 node_modules
-dist
+dist/*
+!dist/README.md
 validation-status.json
