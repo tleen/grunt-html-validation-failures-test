@@ -46,10 +46,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-html-validation');
 
+  grunt.registerTask('default', 'The default task does nothing', function(){
+    grunt.log.writeln('tasks that can run are: imagemin-fails or imagemin-works');
+  });
+
   // imagemin should not work - validate before imagemin
-  grunt.registerTask('default', ['clean', 'validation', 'imagemin', 'copy']);
-
+  grunt.registerTask('imagemin-fails', ['clean', 'validation', 'imagemin', 'copy']);
   // imagemin should work -- validate after imagemin
-  grunt.registerTask('ok', ['clean', 'imagemin', 'validation', 'copy']);
-
+  grunt.registerTask('imagemin-works', ['clean', 'imagemin', 'validation', 'copy']);
 };
