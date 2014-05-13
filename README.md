@@ -5,7 +5,7 @@ In building out a talk on [Grunt talk](https://github.com/tleen/somewww-talk-gru
 
 This project is for recreating and investigating the failure conditions.
 
-In this project I try to combine validation with imagemin, which depending on the order they are run will cause strange behavior. IF validation comes before imagemin, imagemin will still run, but not operate on any files.
+In this project I try to combine html validation with [imagemin](https://github.com/gruntjs/grunt-contrib-imagemin), which depending on the order they are run will cause strange behavior. If validation comes before imagemin, imagemin will still run, but not operate on any files.
 
 ```bash
 grunt imagemin-fails
