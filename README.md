@@ -64,4 +64,5 @@ Done, without errors.
 # Confirmed
 
 on node v0.10.26 / Amazon Linux
+
 on node v0.10.26 / OSX
