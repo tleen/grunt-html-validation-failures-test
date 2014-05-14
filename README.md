@@ -66,3 +66,7 @@ Done, without errors.
 on node v0.10.26 / Amazon Linux
 
 on node v0.10.26 / OSX
+
+# Thanks
+
+vladikoff on Freenode #grunt.js
