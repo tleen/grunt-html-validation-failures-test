@@ -69,4 +69,4 @@ on node v0.10.26 / OSX
 
 # Thanks
 
-vladikoff on Freenode #grunt.js
+@vladikoff via Freenode #grunt.js for help
