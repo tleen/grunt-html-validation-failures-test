@@ -7,6 +7,8 @@ This project is for recreating and investigating the failure conditions.
 
 In this project I try to combine html validation with [imagemin](https://github.com/gruntjs/grunt-contrib-imagemin), which depending on the order they are run will cause strange behavior. If validation comes before imagemin, imagemin will still run, but not operate on any files.
 
+Issue is not present with html validation v0.1.13, but exists v0.1.14+
+
 # Example
 
 ```shell
