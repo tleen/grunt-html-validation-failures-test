@@ -7,15 +7,52 @@ This project is for recreating and investigating the failure conditions.
 
 In this project I try to combine html validation with [imagemin](https://github.com/gruntjs/grunt-contrib-imagemin), which depending on the order they are run will cause strange behavior. If validation comes before imagemin, imagemin will still run, but not operate on any files.
 
-```bash
-grunt imagemin-fails
+```shell
+] grunt imagemin-fails
 
 # imagemin will not operate on src/img/test.png
+
+Running "clean:0" (clean) task
+Cleaning dist/index.html...OK
+
+Running "clean:1" (clean) task
+Cleaning dist/test.png...OK
+
+Running "validation:src" (validation) task
+Validation started for.. src/html/index.html
+>> Validation successful..
+
+Running "imagemin:pngs" (imagemin) task
+# why is nothing happening here?
+
+Running "copy:html" (copy) task
+Copied 1 files
+
+Done, without errors.
+
+
 ```
 
-
-```bash
+```shell
 grunt imagemin-works
 
 # imagemin will operate on src/img/test.png
+
+Running "clean:0" (clean) task
+Cleaning dist/index.html...OK
+
+Running "clean:1" (clean) task
+
+Running "imagemin:pngs" (imagemin) task
+ src/img/test.png (saved 9.33 kB - 15%)
+Minified 1 image (saved 9.33 kB)
+
+Running "validation:src" (validation) task
+Validation started for.. src/html/index.html
+>> Validation successful..
+
+Running "copy:html" (copy) task
+Copied 1 files
+
+Done, without errors.
 ```
