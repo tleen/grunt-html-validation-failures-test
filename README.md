@@ -1,6 +1,14 @@
 Testing Grunt Task Failures
 ===========================
 
+
+# Update
+
+[@vladikoff](https://github.com/vladikoff), [found and fixed](https://github.com/praveenvijayan/grunt-html-validation/pull/52) the problem.
+
+
+# Problem
+
 In building out a talk on [Grunt talk](https://github.com/tleen/somewww-talk-grunt), I found some tasks would silently not run. Eventually I found that by commenting out the [grunt-html-validation](https://github.com/praveenvijayan/grunt-html-validation) plugin these tasks would start working normally again. See Issue #[1](https://github.com/tleen/somewww-talk-grunt/issues/1), in that talk's project.
 
 This project is for recreating and investigating the failure conditions.
