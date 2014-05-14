@@ -27,7 +27,7 @@
     "grunt-contrib-clean" : "0.5.0",
     "grunt-contrib-copy" : "0.5.0",
     "grunt-contrib-imagemin" : "0.7.0",
-    "grunt-html-validation" : "0.1.16",
+    "grunt-html-validation" : "0.1.14",
     "request" : "2.34.0",
     "should" : "3.3.1"
   }
